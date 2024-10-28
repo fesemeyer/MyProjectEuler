@@ -1,0 +1,4 @@
+name = "MyProjectEuler"
+uuid = "04758817-3601-4eb2-9b57-0f5881903bb9"
+authors = ["fesemeyer <felix.sebastian.meyer@rwth-aachen.de>"]
+version = "0.1.0"
