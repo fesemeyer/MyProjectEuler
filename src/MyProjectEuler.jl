@@ -1,9 +1,9 @@
 module MyProjectEuler
 
 using BenchmarkTools
+using DataStructures
 
 export solve
-export Problem1
 
 abstract type Problem end
 
