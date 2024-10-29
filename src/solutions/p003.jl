@@ -9,7 +9,7 @@ function problem003(n::Int)
         end
         p += 1
     end
-    n
+    max(n,p-1)
 end
 
 function is_prime(n::Int)
