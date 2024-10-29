@@ -22,6 +22,11 @@ function solve(ID::Int, benchmark = true)
 end
 
 # include all existing problem solutions
-include.(filter(contains(r".jl$"), readdir("src/solutions/"; join=true)))
+# include.(string.("src/solutions/", readdir("src/solutions/")))
+# include.(filter(contains(r".jl$"), readdir("src/solutions/"; join=true)))
+include("solutions/p001.jl")
+include("solutions/p002.jl")
+include("solutions/p003.jl")
+include("solutions/p004.jl")
 
 end # module MyProjectEuler
