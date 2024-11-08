@@ -1,6 +1,14 @@
 struct Problem5 <: Problem end
 
 function problem005(n::Int)
+    res = 1
+    for i = 2:n
+        res *= div(i, gcd(res, i))
+    end
+    res
+end
+
+function problem005_old(n::Int)
     factors = Dict{Int64,Int64}()
     for i in n:-1:1
         # compute prime factors
