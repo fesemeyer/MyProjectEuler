@@ -14,7 +14,7 @@ end
 
 function is_prime(n::Int)
     f = 2
-    while f <= sqrt(n)
+    while f*f <= n
         if n % f == 0
             return false
         end
